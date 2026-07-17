@@ -129,6 +129,7 @@ ul {
 .bg-glow {
     position: absolute;
     width: 600px;
+    max-width: 100vw;
     height: 600px;
     background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(11,15,25,0) 70%);
     border-radius: 50%;
@@ -778,15 +779,16 @@ ul {
         grid-column: span 1;
     }
     .hero-left {
-        align-items: center;
-        text-align: center;
-        padding-top: 4rem;
+        align-items: flex-start;
+        text-align: left;
+        padding-top: 2rem;
     }
     .hero-subtitle {
         max-width: 100%;
+        text-align: left;
     }
     .hero-actions {
-        justify-content: center;
+        justify-content: flex-start;
     }
     .hero-right {
         height: 400px;
