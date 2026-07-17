@@ -793,7 +793,11 @@ ul {
     .hero-left, .hero-right {
         grid-column: span 1;
     }
+    .hero-right {
+        order: 1;
+    }
     .hero-left {
+        order: 2;
         align-items: flex-start;
         text-align: left;
         padding-top: 2rem;
