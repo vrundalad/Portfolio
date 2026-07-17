@@ -32,13 +32,14 @@
             </div>
             <div class="nav-menu">
                 <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#expertise" class="nav-link">Skills</a></li>
-                    <li><a href="#artifacts" class="nav-link">Projects</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#case-study" class="nav-link">Case Studies</a></li>
-                    <li><a href="#certifications" class="nav-link">Certificates</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <!-- <li><a href="#certifications" class="nav-link">Certificates</a></li> -->
+
                 </ul>
             </div>
             <div class="nav-actions">
@@ -75,7 +76,7 @@
                     </p>
                     
                     <div class="hero-actions">
-                        <a href="#case-study" class="btn btn-primary btn-glow btn-magnetic">
+                        <a href="#projects" class="btn btn-primary btn-glow btn-magnetic">
                             View My Projects
                         </a>
                         <a href="#resume" class="btn btn-ghost btn-magnetic">
@@ -92,24 +93,22 @@
                             <a href="mailto:vrundalad49@gmail.com" class="social-icon" aria-label="Email">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                             </a>
-                            <a href="#" class="social-icon" aria-label="Phone">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                            </a>
+
                         </div>
                     </div>
                 </div>
 
                 <!-- Right: Profile Image Showcase -->
-                <div class="hero-right">
-                    <div class="profile-showcase tilt-card">
-                        <div class="profile-glow"></div>
-                        <div class="profile-image-container">
+                <div class="hero-right" oncontextmenu="return false;" ondragstart="return false;" style="user-select: none; -webkit-user-drag: none;">
+                    <div class="profile-showcase">
+                        <div class="profile-glow" style="animation: none !important;"></div>
+                        <div class="profile-image-container" style="position: relative;">
                             <!-- Vrunda Lad Profile Photo -->
-                            <img src="./profile.jpg" alt="Vrunda Lad" class="profile-img">
+                            <img src="./profile.jpg" alt="Vrunda Lad" class="profile-img" style="pointer-events: none; -webkit-user-drag: none; user-select: none;">
                         </div>
                         
                         <!-- Floating Tech Badge 1 -->
-                        <div class="floating-badge badge-1">
+                        <div class="floating-badge badge-1" style="animation: none !important;">
                             <div class="badge-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
                             </div>
@@ -120,7 +119,7 @@
                         </div>
 
                         <!-- Floating Tech Badge 2 -->
-                        <div class="floating-badge badge-2">
+                        <div class="floating-badge badge-2" style="animation: none !important;">
                             <div class="badge-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
                             </div>
@@ -140,16 +139,17 @@
             <div style="position: absolute; top: -100px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0,240,255,0.03) 0%, transparent 70%); border-radius: 50%; pointer-events: none; z-index: 0;"></div>
             
             <div class="dashboard-container" style="position: relative; z-index: 1;">
+                <div class="section-header text-center" style="margin-bottom: 40px;">
+                    <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 1rem;">About Me</h2>
+                </div>
+                
                 <!-- 55/45 Outer Grid -->
                 <div class="dash-grid-top dash-grid-about">
                     
                     <!-- Left Column: About Me -->
                     <div class="dash-bio-column reveal-fade-in" style="padding-top: 0;">
-                        <div style="display: inline-flex; align-items: center; justify-content: center; padding: 6px 12px; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 6px; color: #00F0FF; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 32px; box-shadow: 0 0 20px rgba(0, 240, 255, 0.05); background: rgba(255,255,255,0.02);">
-                            ABOUT ME
-                        </div>
                         
-                        <h2 class="dash-about-heading" style="font-size: 32px; font-weight: 600; color: #FFFFFF; line-height: 1.4; margin-top: 0; margin-bottom: 24px;">An aspiring Product Manager passionate about building user-centric digital products.</h2>
+                        <h2 class="dash-about-heading" style="font-size: 32px; font-weight: 600; color: var(--c-white); line-height: 1.4; margin-top: 0; margin-bottom: 24px;">An aspiring Product Manager passionate about building user-centric digital products.</h2>
                         
                         <p style="font-size: 18px; line-height: 1.6; color: #94A3B8; margin: 0;">With a background in Computer Applications and Product Management, interested in product strategy, user research, and creating solutions that solve real-world problems. Through internships and hands-on projects, gained practical experience in product discovery, market research, PRD writing, feature prioritization, and prototyping. Driven by curiosity, continuous learning, and building products that create meaningful impact.</p>
                     </div>
@@ -158,7 +158,7 @@
                     <div class="dash-cards-column" style="display: flex; flex-direction: column; gap: 24px;">
                         
                         <!-- Card 1: Education Stack -->
-                        <div class="dash-card tilt-card" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px;">
+                        <div class="dash-card" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px;">
                             <h3 class="dash-card-title" style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px;">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
                                 Education Stack
@@ -166,30 +166,30 @@
                             <div class="dash-list">
                                 <div class="dash-list-item-simple">
                                     <h4 class="dash-item-title" style="font-size: 16px; margin-bottom: 4px;">Product Management with Gen and Agentic AI</h4>
-                                    <span class="dash-item-subtitle" style="color: #FFFFFF; font-size: 14px;">BITS School of Management</span>
-                                    <span class="dash-item-meta" style="color: #94A3B8; font-size: 13px;">12/2025 – 06/2026 | Remote</span>
+                                    <span class="dash-item-subtitle" style="color: var(--c-white); font-size: 14px;">BITS School of Management</span>
+                                    <span class="dash-item-meta" style="color: var(--c-gray); font-size: 13px;">12/2025 – 06/2026 | Remote</span>
                                 </div>
                                 <div class="dash-list-item-simple">
                                     <h4 class="dash-item-title" style="font-size: 16px; margin-bottom: 4px;">Bachelor of Computer Applications(BCA)</h4>
-                                    <span class="dash-item-subtitle" style="color: #FFFFFF; font-size: 14px;">S.S. Agrawal College (VNSGU)</span>
-                                    <span class="dash-item-meta" style="color: #94A3B8; font-size: 13px;">06/2022 – 04/2025 | Navsari, Gujarat</span>
+                                    <span class="dash-item-subtitle" style="color: var(--c-white); font-size: 14px;">S.S. Agrawal College (VNSGU)</span>
+                                    <span class="dash-item-meta" style="color: var(--c-gray); font-size: 13px;">06/2022 – 04/2025 | Navsari, Gujarat</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Card 2: Metrics Grid -->
                         <div class="dash-metrics-grid">
-                            <div class="dash-card tilt-card" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <div style="color: #00F0FF; font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);">2+</div>
-                                <div style="color: #94A3B8; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4;">PRODUCT<br>PROJECTS</div>
+                            <div class="dash-card" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div style="color: var(--c-cyan); font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);">2+</div>
+                                <div style="color: var(--c-gray); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4;">PRODUCT<br>PROJECTS</div>
                             </div>
-                            <div class="dash-card tilt-card" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <div style="color: #00F0FF; font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);">5+</div>
-                                <div style="color: #94A3B8; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4;">CORE PM &<br>AI TOOLS</div>
+                            <div class="dash-card" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div style="color: var(--c-cyan); font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);">5+</div>
+                                <div style="color: var(--c-gray); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4;">CORE PM &<br>AI TOOLS</div>
                             </div>
-                            <div class="dash-card tilt-card" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <div style="color: #00F0FF; font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);">3+</div>
-                                <div style="color: #94A3B8; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4;">INDUSTRY<br>CERTIFICATES</div>
+                            <div class="dash-card" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div style="color: var(--c-cyan); font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);">3+</div>
+                                <div style="color: var(--c-gray); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4;">INDUSTRY<br>CERTIFICATES</div>
                             </div>
                         </div>
 
@@ -202,15 +202,12 @@
         <section id="experience-showcase" class="section reveal dashboard-about">
             <div class="dashboard-container">
                 <!-- Section 1: Featured Product Projects -->
-                <div class="dash-section-header">
-                    <h3 class="dash-section-title">
-                        FEATURED PROJECTS 
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                    </h3>
+                <div id="projects" class="section-header text-center" style="margin-bottom: 40px;">
+                    <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 1rem;">Projects</h2>
                 </div>
                 <div class="project-thumbnail-grid">
                     <!-- Project 1: SalesSaathi -->
-                    <div class="project-thumbnail-card" onclick="openProjectModal('salessaathi')">
+                    <div class="project-thumbnail-card" onclick="window.location.href='salessaathi.html'">
                         <div class="project-image-wrapper">
                             <img src="salessaathi.png" alt="SalesSaathi Preview">
                         </div>
@@ -221,7 +218,7 @@
                     </div>
                     
                     <!-- Project 2: TradePilot AI -->
-                    <div class="project-thumbnail-card" onclick="openProjectModal('tradepilot')">
+                    <div class="project-thumbnail-card" onclick="window.location.href='tradepilot.html'">
                         <div class="project-image-wrapper">
                             <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80" alt="TradePilot AI Preview">
                         </div>
@@ -235,8 +232,8 @@
                 <!-- Hidden Project Data for Modal Injection -->
                 <div id="project-data-salessaathi" style="display: none;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
-                        <h4 style="color: #FFFFFF; font-size: 24px; font-weight: 700; margin: 0;">SalesSaathi</h4>
-                        <span style="color: #94A3B8; font-size: 14px; font-weight: 500;">01/2026 – 06/2026</span>
+                        <h4 style="color: var(--c-white); font-size: 24px; font-weight: 700; margin: 0;">SalesSaathi</h4>
+                        <span style="color: var(--c-gray); font-size: 14px; font-weight: 500;">01/2026 – 06/2026</span>
                     </div>
                     <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px;">
                         <a href="https://www.figma.com/design/vhlQrPaeBIJ8LLnq3ReT4d/sales_saathi?node-id=0-1&t=uH8ctWRYlvKgRRqF-1" target="_blank" class="dash-tag dash-tag-link">
@@ -259,8 +256,8 @@
                 
                 <div id="project-data-tradepilot" style="display: none;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
-                        <h4 style="color: #FFFFFF; font-size: 24px; font-weight: 700; margin: 0;">TradePilot AI</h4>
-                        <span style="color: #94A3B8; font-size: 14px; font-weight: 500;"></span>
+                        <h4 style="color: var(--c-white); font-size: 24px; font-weight: 700; margin: 0;">TradePilot AI</h4>
+                        <span style="color: var(--c-gray); font-size: 14px; font-weight: 500;"></span>
                     </div>
                     <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px;">
                         <span class="dash-tag">Supabase</span>
@@ -279,42 +276,49 @@
 
 
                 <!-- Section 2: Professional Deep-Dive -->
-                <div class="dash-section-header">
-                    <h3 class="dash-section-title">
-                        PROFESSIONAL DEEP-DIVE
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                    </h3>
+                <div id="experience" class="section-header text-center" style="margin-top: 60px; margin-bottom: 40px;">
+                    <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 1rem;">Experience</h2>
                 </div>
                 <div class="dash-cards-column" style="gap: 24px; margin-bottom: 24px;">
                     <!-- Associate Product Manager Intern -->
-                    <div class="dash-card dash-card-compact tilt-card">
+                    <div class="dash-card dash-card-compact">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
-                            <h4 style="color: #FFFFFF; font-size: 20px; font-weight: 700;">Associate Product Manager Intern | SLA (Product: ScootLoop)</h4>
-                            <span style="color: #94A3B8; font-size: 14px; font-weight: 500;">11/2025 – 06/2026</span>
+                            <h4 style="color: var(--c-white); font-size: 20px; font-weight: 700;">Associate Product Manager Intern | SLA (Product: Scoutloop)</h4>
+                            <span style="color: var(--c-gray); font-size: 14px; font-weight: 500;">11/2025 – 06/2026</span>
                         </div>
                         <ul class="dash-bullet-list">
-                            <li>Market research, user stories, cross-functional specs, wireframes, backlog prioritization, and MVP testing.</li>
+                            <li>Conducted market research and competitor analysis to identify user needs and market opportunities.</li>
+                            <li>Defined product requirements, user stories, and feature specifications with cross-functional teams.</li>
+                            <li>Created wireframes, user flows, and product documentation to support product development.</li>
+                            <li>Assisted in backlog prioritization, sprint planning, and Agile execution.</li>
+                            <li>Supported MVP planning, testing, validation, and pre-launch activities.</li>
                         </ul>
                     </div>
                     <!-- Web Development Intern -->
-                    <div class="dash-card dash-card-compact tilt-card">
+                    <div class="dash-card dash-card-compact">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
-                            <h4 style="color: #FFFFFF; font-size: 20px; font-weight: 700;">Web Development Intern | Acmegrade x Mood Indigo, IIT Bombay</h4>
-                            <span style="color: #94A3B8; font-size: 14px; font-weight: 500;">05/2024 – 04/2024</span>
+                            <h4 style="color: var(--c-white); font-size: 20px; font-weight: 700;">Web Development Intern | Acmegrade x Mood Indigo, IIT Bombay</h4>
+                            <span style="color: var(--c-gray); font-size: 14px; font-weight: 500;">05/2024 – 04/2024</span>
                         </div>
                         <ul class="dash-bullet-list">
-                            <li>Responsive web applications using frontend/backend tech, wireframing/prototyping UI improvements, and core software lifecycle features.</li>
+                            <li>Developed responsive web applications using frontend, backend, and database technologies.</li>
+                            <li>Worked on wireframing, prototyping, and UI/UX design improvements.</li>
+                            <li>Built and tested features while ensuring performance and usability.</li>
+                            <li>Gained exposure to the complete software development lifecycle.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Section 3: Bottom Split Grid -->
+                <!-- Section 3: Bottom Split Grid (Skills) -->
+                <div id="expertise" class="section-header text-center" style="margin-top: 60px; margin-bottom: 40px;">
+                    <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 1rem;">Skills</h2>
+                </div>
                 <div class="dash-grid-top" style="gap: 24px;">
                     <!-- Left Card: Skills Architecture -->
-                    <div class="dash-card dash-card-compact tilt-card">
-                        <h4 style="color: #FFFFFF; font-size: 20px; font-weight: 700; margin-bottom: 24px;">Skills Architecture</h4>
+                    <div class="dash-card dash-card-compact">
+                        <h4 style="color: var(--c-white); font-size: 20px; font-weight: 700; margin-bottom: 24px;">Skills Architecture</h4>
                         
-                        <h5 style="color: #00E5FF; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Core Product Skills</h5>
+                        <h5 style="color: var(--c-cyan); font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Core Product Skills</h5>
                         <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
                             <span class="dash-tag">Product Research</span>
                             <span class="dash-tag">User Research</span>
@@ -328,7 +332,7 @@
                             <span class="dash-tag">Backlog Management</span>
                         </div>
 
-                        <h5 style="color: #00E5FF; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Tools Ecosystem</h5>
+                        <h5 style="color: var(--c-cyan); font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Tools Ecosystem</h5>
                         <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
                             <span class="dash-tag">Figma</span>
                             <span class="dash-tag">Jira</span>
@@ -345,7 +349,7 @@
                             <span class="dash-tag">Canva</span>
                         </div>
 
-                        <h5 style="color: #00E5FF; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Technical Stack</h5>
+                        <h5 style="color: var(--c-cyan); font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Technical Stack</h5>
                         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
                             <span class="dash-tag">HTML</span>
                             <span class="dash-tag">CSS</span>
@@ -356,8 +360,8 @@
                     </div>
 
                     <!-- Right Card: Certificates & Credentials -->
-                    <div class="dash-card dash-card-compact tilt-card">
-                        <h4 style="color: #FFFFFF; font-size: 20px; font-weight: 700; margin-bottom: 24px;">Certificates & Credentials</h4>
+                    <div class="dash-card dash-card-compact">
+                        <h4 style="color: var(--c-white); font-size: 20px; font-weight: 700; margin-bottom: 24px;">Certificates & Credentials</h4>
                         <ul class="dash-credentials-list">
                             <li>Generative AI Mastermind – Outskill</li>
                             <li>Power BI</li>
@@ -370,16 +374,13 @@
 
 
 
-        <!-- Design & Artifact Showcase Section -->
+        <!-- Design & Artifact Showcase Section HELD FOR LATER
         <section id="artifacts" class="section reveal">
             <div class="container">
                 <div class="section-header text-center">
-                    <h2 class="section-label">05 // VISUAL LIBRARY</h2>
                     <h3 class="section-title">Design & Artifact Showcase</h3>
-                    <p class="section-description">A high-fidelity taxonomy of UX architecture, interface systems, and interactive prototypes.</p>
                 </div>
 
-                <!-- Taxonomy Filter Navigation -->
                 <div class="taxonomy-filters">
                     <div class="filter-track">
                         <button class="filter-pill active" data-filter="all">All Assets</button>
@@ -390,9 +391,7 @@
                     </div>
                 </div>
 
-                <!-- The Media Matrix -->
                 <div class="media-matrix">
-                    <!-- Dashboard Item -->
                     <div class="artifact-card" data-category="dashboards" data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80">
                         <div class="artifact-visual">
                             <div class="ambient-glow"></div>
@@ -408,8 +407,7 @@
                         </div>
                     </div>
 
-                    <!-- Mobile UI Item -->
-                    <div class="artifact-card vertical" data-category="mobile-ui" data-image="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80">
+                    <div class="artifact-card" data-category="mobile-ui" data-image="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80">
                         <div class="artifact-visual">
                             <div class="ambient-glow"></div>
                             <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="TradePilot iOS App">
@@ -424,8 +422,7 @@
                         </div>
                     </div>
 
-                    <!-- User Flow Item -->
-                    <div class="artifact-card wide" data-category="user-flows" data-image="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=1200&q=80">
+                    <div class="artifact-card" data-category="user-flows" data-image="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=1200&q=80">
                         <div class="artifact-visual">
                             <div class="ambient-glow"></div>
                             <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=1200&q=80" alt="Onboarding User Flow">
@@ -440,7 +437,6 @@
                         </div>
                     </div>
 
-                    <!-- Wireframes Item -->
                     <div class="artifact-card" data-category="wireframes" data-image="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80">
                         <div class="artifact-visual">
                             <div class="ambient-glow"></div>
@@ -458,10 +454,11 @@
                 </div>
             </div>
         </section>
+        -->
 
 
 
-        <!-- Professional Credentials Section -->
+        <!-- Professional Credentials Section
         <section id="certifications" class="section reveal">
             <div class="container">
                 <div class="section-header text-center">
@@ -471,7 +468,7 @@
                 </div>
                 
                 <div class="credentials-grid">
-                    <!-- Credential 1 -->
+                    
                     <div class="cred-card group">
                         <div class="cred-visual">
                             <div class="cred-glow"></div>
@@ -489,7 +486,7 @@
                         </div>
                     </div>
                     
-                    <!-- Credential 2 -->
+                    
                     <div class="cred-card group">
                         <div class="cred-visual">
                             <div class="cred-glow"></div>
@@ -507,7 +504,7 @@
                         </div>
                     </div>
 
-                    <!-- Credential 3 -->
+                    
                     <div class="cred-card group">
                         <div class="cred-visual">
                             <div class="cred-glow"></div>
@@ -527,107 +524,10 @@
                 </div>
             </div>
         </section>
+        -->
     </main>
 
-    <!-- Inbound Communications & Contact Portal -->
-    <section id="contact" class="section reveal">
-        <div class="container">
-            <div class="contact-terminal glass-panel">
-                <div class="terminal-glow"></div>
-                
-                <div class="terminal-header text-center">
-                    <h2 class="terminal-title">Let's build something <span class="text-gradient">impactful</span> together.</h2>
-                    <p class="terminal-subtitle">Open for new opportunities, architectural discussions, and startup engineering.</p>
-                </div>
 
-                <div class="terminal-grid">
-                    <!-- Left Column: Communication Nodes -->
-                    <div class="comm-matrix">
-                        <!-- Vector 1: Email -->
-                        <div class="comm-vector group" onclick="copyEmail(this)" data-email="vrundalad49@gmail.com">
-                            <div class="vector-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            </div>
-                            <div class="vector-meta">
-                                <span class="vector-label">Email Channel</span>
-                                <span class="vector-value">vrundalad49@gmail.com</span>
-                            </div>
-                            <span class="vector-action">Copy</span>
-                        </div>
-
-                        <!-- Vector 2: LinkedIn -->
-                        <a href="https://www.linkedin.com/in/vrunda-lad-79642b2a3?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="comm-vector group">
-                            <div class="vector-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                            </div>
-                            <div class="vector-meta">
-                                <span class="vector-label">Professional Identity</span>
-                                <span class="vector-value">LinkedIn Network</span>
-                            </div>
-                            <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                        </a>
-
-                        <!-- Vector 3: GitHub -->
-                        <a href="https://github.com/vrundalad" target="_blank" class="comm-vector group">
-                            <div class="vector-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            </div>
-                            <div class="vector-meta">
-                                <span class="vector-label">Engineering Repository</span>
-                                <span class="vector-value">GitHub Profile</span>
-                            </div>
-                            <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                        </a>
-
-                        <!-- Vector 4: Phone -->
-                        <a href="tel:+1234567890" class="comm-vector group">
-                            <div class="vector-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                            </div>
-                            <div class="vector-meta">
-                                <span class="vector-label">Direct Line</span>
-                                <span class="vector-value">Telecommunication</span>
-                            </div>
-                            <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                        </a>
-                    </div>
-
-                    <!-- Right Column: Inbound Core Form -->
-                    <div class="inbound-core" id="inbound-form-container">
-                        <form id="contact-form" class="capture-form">
-                            <div class="input-group">
-                                <input type="text" id="name" name="name" class="terminal-input" required placeholder=" ">
-                                <label for="name" class="floating-label">Full Name</label>
-                            </div>
-                            <div class="input-group">
-                                <input type="email" id="email" name="email" class="terminal-input" required placeholder=" ">
-                                <label for="email" class="floating-label">Email Address</label>
-                                <span class="error-msg">Please enter a valid email.</span>
-                            </div>
-                            <div class="input-group">
-                                <textarea id="message" name="message" class="terminal-input terminal-textarea" required placeholder=" "></textarea>
-                                <label for="message" class="floating-label">Message / Project Brief</label>
-                            </div>
-                            <button type="submit" class="btn-submit">
-                                <span class="btn-text">Send Message</span>
-                                <svg class="spinner" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
-                            </button>
-                        </form>
-                        
-                        <!-- Success State Container -->
-                        <div class="success-state hidden" id="success-state">
-                            <div class="success-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            </div>
-                            <h3>Message Dispatched Successfully</h3>
-                            <p>I've received your brief and will respond within 24 hours.</p>
-                            <button class="btn-reset" onclick="resetForm()">Send Another</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Closing Footer (Anchor Component) -->
     <footer class="footer-anchor section reveal">
@@ -690,5 +590,58 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Predictive Anti-Screenshot Script
+        (function() {
+            const img = document.querySelector('.profile-img');
+            if (!img) return;
+
+            function hide() {
+                img.style.visibility = 'hidden';
+                img.style.opacity = '0';
+                img.style.transition = 'none'; // Instant hide
+            }
+
+            function show() {
+                img.style.visibility = 'visible';
+                img.style.opacity = '1';
+                img.style.transition = 'opacity 0.2s';
+            }
+
+            // Hide when mouse leaves window or window loses focus
+            document.addEventListener('mouseleave', hide);
+            document.addEventListener('mouseenter', show);
+            window.addEventListener('blur', hide);
+            window.addEventListener('focus', show);
+            document.addEventListener('visibilitychange', () => document.hidden ? hide() : show());
+
+            // PREDICTIVE KEYBOARD BLOCKER
+            // Instantly blurs the image the millisecond a modifier key (Win, Shift, Mac Cmd) is pressed down.
+            // By the time 'S' or '4' is pressed to trigger the screenshot, the image is already gone!
+            document.addEventListener('keydown', (e) => {
+                const triggerKeys = ['Meta', 'Shift', 'Alt', 'Control', 'OS', 'PrintScreen'];
+                if (triggerKeys.includes(e.key) || e.keyCode === 44 || e.metaKey || e.shiftKey || e.ctrlKey || e.altKey) {
+                    hide();
+                    if (e.key === 'PrintScreen' || e.keyCode === 44) {
+                        navigator.clipboard.writeText('');
+                        setTimeout(show, 3000);
+                    }
+                }
+            });
+
+            document.addEventListener('keyup', (e) => {
+                // Only show again if NO modifier keys are currently being held down
+                if (!e.metaKey && !e.shiftKey && !e.altKey && !e.ctrlKey) {
+                    show();
+                }
+            });
+            
+            // Disable right click globally
+            document.addEventListener('contextmenu', e => e.preventDefault());
+            
+            // Mobile specific protections
+            img.style.webkitTouchCallout = 'none';
+        })();
+    </script>
 </body>
 </html>

@@ -121,6 +121,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Mobile Menu Toggle Logic
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (mobileMenuBtn && navMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            // Prevent scrolling when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+
     // 7. Scrollspy Logic
     const sections = document.querySelectorAll('section, header');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -348,81 +375,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowLeft') prevImage();
     });
 
-    // 13. Contact Form & Inbound Communications
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        const emailInput = document.getElementById('email');
-        const submitBtn = contactForm.querySelector('.btn-submit');
-        const successState = document.getElementById('success-state');
-        
-        // Basic Regex Validation for Email
-        const isValidEmail = (email) => {
-            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-        };
-
-        emailInput.addEventListener('input', () => {
-            if (emailInput.value && !isValidEmail(emailInput.value)) {
-                emailInput.classList.add('invalid');
-            } else {
-                emailInput.classList.remove('invalid');
-            }
-        });
-
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            if (!isValidEmail(emailInput.value)) {
-                emailInput.classList.add('invalid');
-                return;
-            }
-
-            // Simulate Network Request
-            submitBtn.classList.add('loading');
-            submitBtn.disabled = true;
-
-            setTimeout(() => {
-                submitBtn.classList.remove('loading');
-                submitBtn.disabled = false;
-                
-                // Show Success State
-                contactForm.style.opacity = '0';
-                contactForm.style.pointerEvents = 'none';
-                successState.classList.remove('hidden');
-            }, 1500);
-        });
-    }
 
 });
 
-// Global Function for Copy to Clipboard (Vector 1)
-window.copyEmail = function(element) {
-    const email = element.getAttribute('data-email');
-    navigator.clipboard.writeText(email).then(() => {
-        const actionSpan = element.querySelector('.vector-action');
-        const originalText = actionSpan.innerText;
-        actionSpan.innerText = 'Copied!';
-        actionSpan.style.color = 'var(--c-cyan)';
-        
-        setTimeout(() => {
-            actionSpan.innerText = originalText;
-            actionSpan.style.color = '';
-        }, 2000);
-    }).catch(err => {
-        console.error('Failed to copy text: ', err);
-    });
-};
-
-// Global Function to Reset Form State
-window.resetForm = function() {
-    const contactForm = document.getElementById('contact-form');
-    const successState = document.getElementById('success-state');
-    if (contactForm && successState) {
-        contactForm.reset();
-        successState.classList.add('hidden');
-        contactForm.style.opacity = '1';
-        contactForm.style.pointerEvents = 'auto';
-    }
-};
 
 // Global Functions for Project Detail Modal
 window.openProjectModal = function(projectId) {
@@ -455,4 +410,76 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+});
+
+// Security Restrictions (Anti-Inspect & Anti-Screenshot)
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault(); // Block right-click globally
+});
+
+document.addEventListener('keydown', function(e) {
+    const protectedSection = document.querySelector('.hero-right');
+    
+    // Intercept PrintScreen and Win+Shift+S
+    if (e.key === 'PrintScreen' || e.keyCode === 44 || (e.metaKey && e.shiftKey && (e.key === 's' || e.key === 'S'))) {
+        if (protectedSection) {
+            protectedSection.style.opacity = '0';
+            protectedSection.style.filter = 'blur(40px)';
+            protectedSection.style.transition = 'none';
+        }
+        navigator.clipboard.writeText('');
+        
+        setTimeout(() => {
+            if (protectedSection) {
+                protectedSection.style.opacity = '1';
+                protectedSection.style.filter = 'none';
+            }
+        }, 5000);
+    }
+
+    // Disable F12
+    if (e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+    }
+    
+    // Disable Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C (Inspect Element)
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+        e.preventDefault();
+        return false;
+    }
+    
+    // Disable Ctrl+U (View Source)
+    if (e.ctrlKey && e.keyCode === 85) {
+        e.preventDefault();
+        return false;
+    }
+});
+
+function hideProfile() {
+    const protectedSection = document.querySelector('.hero-right');
+    if (protectedSection) {
+        protectedSection.style.opacity = '0';
+        protectedSection.style.filter = 'blur(40px)';
+        protectedSection.style.transition = 'none';
+    }
+}
+
+function showProfile() {
+    const protectedSection = document.querySelector('.hero-right');
+    if (protectedSection) {
+        protectedSection.style.opacity = '1';
+        protectedSection.style.filter = 'none';
+        protectedSection.style.transition = 'opacity 0.2s ease';
+    }
+}
+
+// Advanced Screenshot Protection Suite
+window.addEventListener('blur', hideProfile);
+window.addEventListener('focus', showProfile);
+document.addEventListener('mouseleave', hideProfile);
+document.addEventListener('mouseenter', showProfile);
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) hideProfile();
+    else showProfile();
 });
