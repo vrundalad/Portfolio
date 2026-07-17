@@ -48,6 +48,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--c-navy);
     color: var(--c-gray);
@@ -55,7 +60,6 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
 }
 
 ::selection {
@@ -785,8 +789,25 @@ ul {
         justify-content: center;
     }
     .hero-right {
-        height: 500px;
-        margin-top: 3rem;
+        height: 400px;
+        margin-top: 2rem;
+    }
+    .profile-showcase {
+        max-width: 100%;
+        height: 350px;
+    }
+    .profile-image-container {
+        width: 280px;
+        height: 280px;
+    }
+    .badge-1, .badge-2 {
+        transform: scale(0.85);
+    }
+    .badge-1 {
+        left: 0;
+    }
+    .badge-2 {
+        right: 0;
     }
 }
 @media (max-width: 768px) {
