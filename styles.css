@@ -2967,3 +2967,135 @@ ul {
 .close-project-modal:hover {
     color: #00F0FF;
 }
+
+/* =========================================
+   Global Responsive Adjustments
+   ========================================= */
+
+/* Hero Typography Adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0 !important;
+    }
+    .container {
+        padding: 0 1.5rem !important;
+    }
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3rem) !important;
+    }
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+    .section-title {
+        font-size: 2rem !important;
+    }
+    .dash-about-heading {
+        font-size: 28px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem !important;
+    }
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    .hero-actions .btn {
+        width: 100%;
+    }
+    .hero-actions div {
+        justify-content: center;
+        margin-left: 0 !important;
+        margin-top: 1rem;
+    }
+    .terminal-title {
+        font-size: 1.75rem !important;
+    }
+}
+
+/* Dashboard Grids */
+.dash-grid-about {
+    grid-template-columns: 55fr 45fr;
+    gap: 48px;
+}
+@media (max-width: 992px) {
+    .dash-grid-about {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+    }
+}
+
+.dash-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+@media (max-width: 640px) {
+    .dash-metrics-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Project Modals */
+@media (max-width: 480px) {
+    .project-modal-content {
+        width: 95% !important;
+        padding: 24px 16px !important;
+    }
+}
+
+/* Taxonomy Filters */
+@media (max-width: 640px) {
+    .filter-track {
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 1rem !important;
+        padding: 0.5rem !important;
+        gap: 0.5rem;
+    }
+    .filter-pill {
+        border-radius: 0.5rem !important;
+        flex: 1 1 40%;
+        text-align: center;
+    }
+}
+
+/* Project Thumbnail Grid */
+@media (max-width: 480px) {
+    .project-thumbnail-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Media Matrix */
+@media (max-width: 480px) {
+    .media-matrix {
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: 200px;
+    }
+    .artifact-card.wide, .artifact-card.vertical {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+}
+
+/* Contact Terminal */
+@media (max-width: 640px) {
+    .contact-terminal {
+        padding: 2rem 1.25rem !important;
+    }
+    .terminal-grid {
+        gap: 2rem !important;
+    }
+    .comm-vector {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .vector-icon {
+        margin-right: 0 !important;
+    }
+}
