@@ -2947,9 +2947,9 @@ ul {
     font-size: 13px;
     font-weight: 500;
     color: #475569;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    line-height: 1.5;
+    /* allow text to wrap on mobile */
+    white-space: normal;
 }
 
 /* Project Modal Overlay */
@@ -3105,7 +3105,7 @@ ul {
 }
 
 /* Project Thumbnail Grid */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .project-thumbnail-grid {
         grid-template-columns: 1fr !important;
     }
