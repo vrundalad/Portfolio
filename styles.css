@@ -178,6 +178,8 @@ ul {
     transition: all var(--trans-fast);
     /* For magnetic effect */
     will-change: transform;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -437,13 +439,17 @@ ul {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: var(--surface);
+        background: var(--c-navy);
         display: flex;
         align-items: center;
         justify-content: center;
         transition: right 0.3s ease;
         z-index: 1000;
         box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    }
+    
+    [data-theme='light'] .nav-menu {
+        background: var(--c-white);
     }
     
     .nav-menu.active {
@@ -462,6 +468,15 @@ ul {
     
     .nav-socials {
         display: none;
+    }
+    
+    .nav-actions {
+        gap: 0.75rem;
+    }
+    
+    .nav-actions .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
     }
     
     .mobile-menu-btn {
